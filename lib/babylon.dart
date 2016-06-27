@@ -1,5 +1,5 @@
 @JS('BABYLON')
-library babylon;
+library babylonjs_facade;
 
 import "package:func/func.dart";
 import "package:js/js.dart";

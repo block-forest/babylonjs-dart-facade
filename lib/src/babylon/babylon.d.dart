@@ -1,4 +1,4 @@
-part of babylon;
+part of babylonjs_facade;
 
 @JS('_DepthCullingState')
 class DepthCullingState {

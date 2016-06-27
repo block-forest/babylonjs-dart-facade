@@ -1,7 +1,6 @@
 import 'dart:html';
-import 'dart:math' as Math;
 import "package:js/js.dart" show allowInterop;
-import 'package:babylon/babylon.dart' as BABYLON;
+import 'package:babylonjs_facade/babylon.dart' as BABYLON;
 
 CanvasElement canvas;
 BABYLON.Engine engine;
