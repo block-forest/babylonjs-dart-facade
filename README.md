@@ -13,7 +13,7 @@ The library will only be lightly maintained.
 Add a dependency in your pubspec.yaml
 
     # dependencies:
-    #   babylon_facade:
+    #   babylonjs_facade:
     #     git: https://github.com/blockforest/babylonjs-dart-facade
 
 # Example
