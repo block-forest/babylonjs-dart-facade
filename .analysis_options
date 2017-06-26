@@ -1,0 +1,3 @@
+analyzer:
+  strong-mode: false #js impossible to strongmodalize
+#  exclude:

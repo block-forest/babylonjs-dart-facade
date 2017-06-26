@@ -23,7 +23,6 @@ init() {
 
   engine.resize();
 
-  var dlCount = 0;
   BABYLON.SceneLoader.Load("http://cdn.babylonjs.com/wwwbabylonjs/Scenes/Retail/", "Retail.babylon", engine, allowInterop(_onSuccess), allowInterop(_onProgress), allowInterop(_onError));
 
 // Launch render loop
@@ -36,7 +35,7 @@ void renderLoop () {
   if (scene != null) {
     if (!sceneChecked) {
       var remaining = scene.getWaitingItemsCount();
-      engine.loadingUIText = "Streaming items..." + (remaining ? (remaining + " remaining") : "");
+      engine.loadingUIText = "Streaming items..." + (remaining > 0 ? ("$remaining remaining") : "");
     }
 
     scene.render();
@@ -45,7 +44,7 @@ void renderLoop () {
     if (scene.useDelayedTextureLoading) {
       var waiting = scene.getWaitingItemsCount();
       if (waiting > 0) {
-        print("Streaming items..." + waiting + " remaining");
+        print("Streaming items... $waiting remaining");
       } else {
         print("Streaming done.");
       }
