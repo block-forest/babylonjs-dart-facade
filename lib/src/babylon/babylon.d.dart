@@ -2669,8 +2669,8 @@ class DeviceOrientationCamera extends FreeCamera {
   external set moveSensibility(num v);
   external factory DeviceOrientationCamera(
       String name, Vector3 position, Scene scene);
-  external void attachControl(CanvasElement canvas, [bool noPreventDefault]);
-  external void detachControl(CanvasElement canvas);
+  external void attachControl(covariant CanvasElement canvas, [bool noPreventDefault]);
+  external void detachControl(covariant CanvasElement canvas);
   external void JS$_checkInputs();
 }
 
@@ -2941,8 +2941,8 @@ class TouchCamera extends FreeCamera {
   external set touchMoveSensibility(num v);
   external factory TouchCamera(String name, Vector3 position, Scene scene);
   external void JS$_onLostFocus(FocusEvent e);
-  external void attachControl(CanvasElement canvas, [bool noPreventDefault]);
-  external void detachControl(CanvasElement canvas);
+  external void attachControl(covariant CanvasElement canvas, [bool noPreventDefault]);
+  external void detachControl(covariant CanvasElement canvas);
   external void JS$_checkInputs();
 }
 
@@ -6061,7 +6061,7 @@ class LinesMesh extends Mesh {
   external set checkCollisions(bool v);
   external void JS$_bind(SubMesh subMesh, Effect effect, num fillMode);
   external void JS$_draw(SubMesh subMesh, num fillMode, [num instancesCount]);
-  external dynamic intersects(Ray ray, [bool fastCheck]);
+  external PickingInfo intersects(Ray ray, [bool fastCheck]);
   external void dispose([bool doNotRecurse]);
   external LinesMesh clone(String name,
       [Node newParent, bool doNotCloneChildren]);
