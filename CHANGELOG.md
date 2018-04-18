@@ -1,5 +1,10 @@
 # CHANGELOG BABYLON_JS_FACADE
 
+## 0.2.1 2018-04-18
+
+- now works with Dart 2.0
+- example currently not working due to new CORS settings of babylon's cdn. can't load assets.
+
 ## 0.2.0 2017-06-26
 
 - now based on typedef converted with https://github.com/dart-lang/js_facade_gen

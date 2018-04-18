@@ -4813,15 +4813,15 @@ class Tmp {
   // @Ignore
   Tmp.fakeConstructor$();
   external static List<Vector2> get vector2;
-  external static set Vector2(List<Vector2> v);
+  external static set vector2(List<Vector2> v);
   external static List<Vector3> get vector3;
-  external static set Vector3(List<Vector3> v);
+  external static set vector3(List<Vector3> v);
   external static List<Vector4> get vector4;
-  external static set Vector4(List<Vector4> v);
+  external static set vector4(List<Vector4> v);
   external static List<Quaternion> get quaternion;
-  external static set Quaternion(List<Quaternion> v);
+  external static set quaternion(List<Quaternion> v);
   external static List<Matrix> get matrix;
-  external static set Matrix(List<Matrix> v);
+  external static set matrix(List<Matrix> v);
 }
 
 @JS("BABYLON.EffectFallbacks")
@@ -10187,16 +10187,16 @@ class Octree<T> {
   external SmartArray<T> intersects(Vector3 sphereCenter, num sphereRadius,
       [bool allowDuplicate]);
   external SmartArray<T> intersectsRay(Ray ray);
-  external static void JS$_CreateBlocks/*<T>*/(
+  external static void JS$_CreateBlocks<T>(
       Vector3 worldMin,
       Vector3 worldMax,
-      List<dynamic/*=T*/ > entries,
+      List<T> entries,
       num maxBlockCapacity,
       num currentDepth,
       num maxDepth,
-      IOctreeContainer<dynamic/*=T*/ > target,
+      IOctreeContainer<T> target,
       void creationFunc(
-          dynamic/*=T*/ entry, OctreeBlock<dynamic/*=T*/ > block));
+           T entry, OctreeBlock<T> block));
   external static VoidFunc2<AbstractMesh, OctreeBlock<AbstractMesh>>
       get CreationFuncForMeshes;
   external static set CreationFuncForMeshes(

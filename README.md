@@ -2,7 +2,7 @@
 
 # Disclaimer
 
-This is a Dart JS interop facade generated with [dts-converter](https://github.com/blockforest/dts-converter),
+This is a Dart JS interop facade generated with [js-facade-gen](https://github.com/dart-lang/js_facade_gen),
 which takes TypeScript .d.ts definitions as input. [Source definition](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/babylonjs/babylon.d.ts) taken from DefinitelyTyped.
 
 While Dart Analyzer reports the resulting library as free of errors, nothing except what's needed by the demo has been tested.
