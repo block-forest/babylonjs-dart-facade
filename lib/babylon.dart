@@ -1,15 +1,20 @@
 @JS()
 library babylonjs_facade;
 
-import "package:js/js.dart";
-import "dart:web_gl"
-    show RenderingContext, Buffer, Program, UniformLocation;
-import "dart:html"
-    show CanvasElement, CanvasRenderingContext2D, DeviceOrientationEvent, Event, FocusEvent, HtmlElement, HttpRequest, ImageElement, PointerEvent, VideoElement;
-import "dart:math" show Rectangle;
-import "dart:typed_data"
-    show Float32List, Int32List, TypedData, Uint8List, ByteBuffer;
-import "package:func/func.dart";
-import "dart:web_audio" show AudioNode, GainNode, AudioContext, AudioBuffer;
+import "package:js/js.dart" ;
 
-part 'src/babylon/babylon.d.dart';
+export 'src/babylon/babylon.dart';
+export 'src/babylon/babylon.glTF2Interface.dart';
+//export 'src/babylon/babylon.viewer.module.dart';
+export 'src/babylon/babylonjs.loaders.dart';
+export 'src/babylon/babylonjs.materials.module.dart';
+export 'src/babylon/babylonjs.postProcess.module.dart';
+export 'src/babylon/babylonjs.proceduralTextures.module.dart';
+export 'src/babylon/babylonjs.serializers.module.dart';
+
+@JS("Promise")
+class Promise<T> {
+
+  external void then(Function onFulfilled, Function onRejected);
+  external static Promise resolve (dynamic value);
+}

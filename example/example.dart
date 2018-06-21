@@ -13,6 +13,7 @@ main() {
   canvas.style.width = "100%";
   canvas.style.height = "100%";
   engine = engine = new BABYLON.Engine(canvas, true);
+  engine.enableOfflineSupport = false;
 
   init();
 }
@@ -23,7 +24,7 @@ init() {
 
   engine.resize();
 
-  BABYLON.SceneLoader.Load("http://cdn.babylonjs.com/wwwbabylonjs/Scenes/Retail/", "Retail.babylon", engine, allowInterop(_onSuccess), allowInterop(_onProgress), allowInterop(_onError));
+  BABYLON.SceneLoader.Load("http://www.babylonjs.com/Scenes/Retail/", "Retail.babylon", engine, allowInterop(_onSuccess), allowInterop(_onProgress), allowInterop(_onError));
 
 // Launch render loop
   engine.runRenderLoop(allowInterop(renderLoop));
@@ -41,7 +42,7 @@ void renderLoop () {
     scene.render();
 
     // Streams
-    if (scene.useDelayedTextureLoading) {
+    /*if (scene.useDelayedTextureLoading) {
       var waiting = scene.getWaitingItemsCount();
       if (waiting > 0) {
         print("Streaming items... $waiting remaining");
@@ -49,6 +50,7 @@ void renderLoop () {
         print("Streaming done.");
       }
     }
+  */
   }
 }
 

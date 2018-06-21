@@ -1,31 +1,34 @@
-# BabylonJS Dart Interop Facade
+# BabylonJS Dart Facade
 
-# Disclaimer
+This is a Dart-JS interop facade for the BabylonJS 3D library (version 2.3). 
 
-This is a Dart JS interop facade generated with [js-facade-gen](https://github.com/dart-lang/js_facade_gen),
-which takes TypeScript .d.ts definitions as input. [Source definition](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/babylonjs/babylon.d.ts) taken from DefinitelyTyped.
+Generated with [js-facade-gen](https://github.com/dart-lang/js_facade_gen),
+which takes TypeScript .d.ts definitions as input. [Babylon definition](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/babylonjs/babylon.d.ts) taken from DefinitelyTyped.
 
-While Dart Analyzer reports the resulting library as free of errors, nothing except what's needed by the demo has been tested.
-The library will only be lightly maintained.
+*The threejs Dart Facade requires a Dart 2.0.0-dev SDK*
 
-# Usage
+### Usage
 
-Add a dependency in your pubspec.yaml
+Add a dependency to your pubspec.yaml
 
-    # dependencies:
-    #   babylonjs_facade:
-    #     git: https://github.com/blockforest/babylonjs-dart-facade
+    dependencies:
+      babylonjs_facade:
+        git: https://github.com/blockforest/babylonjs-dart-facade
 
-# Example
+### Examples
 
-Clone this project to run the example scene
+The [Babylon Dart JS-interop Demo](http://acanvas.sounddesignz.com/dart/babylonjs-interop).
 
-    $> pub serve example
+Or, clone this project and run the example scene yourself:
 
-Or view [here](http://rockdot.sounddesignz.com/dart/babylonjs-interop).
+    $> pub global activate webdev
+    $> webdev serve example
 
-## Issues and bugs
+# Update d.ts
 
-Please file reports on the
-[GitHub Issue Tracker](https://github.com/blockforest/babylonjs-dart-facade/issues).
-
+* Before trying this yourself, please note that generated results for three contain errors that require quite some time to go through and fix. The *typescript/* directory has the original converted files (with errors).
+* Install [dart_js_facade_gen](https://github.com/dart-lang/js_facade_gen).
+* Download https://cdn.babylonjs.com/babylon.d.ts to lib/src/babylon/
+* Run:    
+    
+        $> dart_js_facade_gen --destination=lib/src/babylon --basePath=lib/src/babylon/ babylon.d.ts
