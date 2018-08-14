@@ -90,5 +90,5 @@ void _onSuccess(BABYLON.Scene newScene) {
      */
   }
 
-  void _onError(BABYLON.Scene a) {
+  void _onError(BABYLON.Scene a, String msg, [dynamic obj]) {
   }

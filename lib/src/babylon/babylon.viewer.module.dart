@@ -1,5 +1,4 @@
 @JS() library typescript.babylon.viewer.module ; import "package:js/js.dart" ;
- import "package:func/func.dart" ;
  import "babylon.dart" show Observable, Engine, ISceneLoaderPlugin, ISceneLoaderPluginAsync, Scene, SceneLoaderProgressEvent, IDisposable, AbstractMesh, ParticleSystem, Skeleton, AnimationGroup, Material, Animation, Vector3, BaseTexture, IGlowLayerOptions, SceneOptimizer, ArcRotateCamera, Light, EnvironmentHelper, DefaultRenderingPipeline, Color3, IShadowLight, CubeTexture ;
  import "dart:html" show HtmlElement, CanvasElement, Event, ImageData, ImageElement, VideoElement ;
  import "babylon.glTF2Interface.dart" show IAsset ;

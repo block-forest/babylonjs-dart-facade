@@ -3,7 +3,6 @@ library typescript.babylonjs.loaders.module;
 
 import "package:js/js.dart";
 import "dart:typed_data" show ByteBuffer, TypedData, Float32List;
-import "package:func/func.dart";
 import "dart:html" show Node;
 
 /// <reference types="babylonjs"/>
