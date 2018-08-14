@@ -1,5 +1,9 @@
 # CHANGELOG BABYLON_JS_FACADE
 
+## 0.4.0 2018-08-14
+
+- now requires Dart 2.0 stable
+
 ## 0.2.1 2018-04-18
 
 - now works with Dart 2.0

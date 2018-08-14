@@ -1,10 +1,6 @@
-.idea
+.dart_tool/
+.idea/
+build/
 .DS_Store
-cache/
 .packages
-packages
 pubspec.lock
-build
-.buildlog
-.pub/
-.settings/
